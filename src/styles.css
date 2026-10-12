@@ -1,0 +1,15 @@
+:root{--bg:#050b1a;--panel:rgba(14,26,52,.7);--bd:rgba(80,140,220,.25)}
+[data-bs-theme=light]{--bg:#eef3fb;--panel:#fff;--bd:#cfd9ea}
+body{background:var(--bg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.shell{display:flex;min-height:100vh}.side{width:220px;padding:16px;border-right:1px solid var(--bd);display:flex;flex-direction:column;gap:4px}
+.logo{font-size:1.2rem;margin-bottom:16px}.logo b{color:#22d3ee}
+.nl{padding:8px 10px;border-radius:6px;color:inherit;text-decoration:none}.nl:hover{background:var(--panel)}.nl.active{background:rgba(34,211,238,.15);color:#22d3ee}.nl:focus-visible,button:focus-visible{outline:2px solid #22d3ee}
+.main{flex:1;min-width:0}.top{display:flex;gap:12px;align-items:center;padding:10px 20px;border-bottom:1px solid var(--bd)}.met{font-variant-numeric:tabular-nums}
+.content{padding:20px}.card-s{background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:16px;backdrop-filter:blur(6px)}
+.dot{width:10px;height:10px;border-radius:50%}.dot.ok{background:#22c55e}.dot.warn{background:#f59e0b}.dot.bad{background:#ef4444}
+.stage{display:flex;gap:16px;height:calc(100vh - 110px)}.cv{flex:1;position:relative;border:1px solid var(--bd);border-radius:10px;overflow:hidden;background:#000;min-height:320px}
+.panel-s{width:280px;overflow:auto;background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:16px}
+.hint{position:absolute;left:12px;bottom:10px;font-size:.75rem;color:#9fb4d0;pointer-events:none}.lbl{background:rgba(5,11,26,.8);color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;white-space:nowrap}
+.toast-s{position:fixed;right:16px;bottom:16px;background:#0e7490;color:#fff;padding:10px 14px;border-radius:8px;z-index:9}
+@media(max-width:768px){.shell{flex-direction:column}.side{width:auto;flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid var(--bd)}.logo{display:none}.nl{white-space:nowrap}.stage{flex-direction:column;height:auto}.cv{height:55vh}.panel-s{width:auto}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
